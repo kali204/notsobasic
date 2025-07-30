@@ -52,10 +52,3 @@ const changeSlider = () => {
 let autoPlay = setInterval(() => {
     next.click();
 }, 5000);
-
-const toggle = document.querySelector(".nav-toggle");
-  const nav = document.querySelector(".nav");
-
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("show");
-  });
