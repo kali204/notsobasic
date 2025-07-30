@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Not So Basic Cafe | Best Cafe in Haldwani</title>
+  <meta name="description" content="Not So Basic Cafe – Probably the best cafe in Haldwani! Come for coffee, stay for the vibe. Located at Hidel Chauraha, Nainital Road. Open daily 10:00–21:30." />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Not So Basic Cafe, Haldwani" />
+  <meta property="og:description" content="Probably the best cafe in Haldwani! Visit us for freshly brewed coffee and a cozy experience." />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:url" content="https://www.instagram.com/notsobasiccafe/" />
+  <meta property="og:image" content="images/logo.png" />
+
+  <link rel="stylesheet" href="style1.css" />
+  <style>
+  /* Header Styles */
+.header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo and Title */
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #7b3f00;
+}
+
+/* Hamburger */
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile Nav */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    right: 1rem;
+    top: 60px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+</style>
+
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav-container">
+    <a href="#" class="logo-block">
+      <img src="images/logo.png" alt="Not So Basic Cafe logo" class="logo" />
+      <span class="title">Not So Basic Cafe</span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+  <section class="carousel next">
+    <div class="list">
+
+      <!-- Caffe Latte -->
+      <article class="item other_1">
+        <div class="main-content" style="background-color: #9c4d2f;">
+          <div class="content">
+            <h2 style="color: #dedfe1;">Caffe Latte</h2>
+            <p class="price">₹220</p>
+            <p class="description">A smooth and creamy blend of freshly brewed espresso combined with steamed milk and topped with froth.</p>
+            <button class="addToCart" aria-label="Add Caffe Latte to cart">Add To Cart</button>
+          </div>
+        </div>
+        <figure class="image">
+          <img src="images/1.png" alt="Caffe Latte coffee drink" />
+          <figcaption>Caffe Latte</figcaption>
+        </figure>
+      </article>
+
+      <!-- Strawberry Mocha -->
+      <article class="item active">
+        <div class="main-content" style="background-color: #f5bfaf;">
+          <div class="content">
+            <h2>Strawberry Mocha</h2>
+            <p class="price">₹220</p>
+            <p class="description">Fusion of chocolate, fresh strawberries, and espresso, topped with milk. A refreshing treat.</p>
+            <button class="addToCart" aria-label="Add Strawberry Mocha to cart">Add To Cart</button>
+          </div>
+        </div>
+        <figure class="image">
+          <img src="images/2.png" alt="Strawberry Mocha coffee drink" />
+          <figcaption>Strawberry Mocha</figcaption>
+        </figure>
+      </article>
+
+      <!-- Doppio Espresso -->
+      <article class="item other_2">
+        <div class="main-content" style="background-color: #dedfe1;">
+          <div class="content">
+            <h2>Doppio Espresso</h2>
+            <p class="price">₹220</p>
+            <p class="description">An intense, double shot of espresso with bold flavors and rich aroma to invigorate your senses.</p>
+            <button class="addToCart" aria-label="Add Doppio Espresso to cart">Add To Cart</button>
+          </div>
+        </div>
+        <figure class="image">
+          <img src="images/3.png" alt="Doppio Espresso coffee drink" />
+          <figcaption>Doppio Espresso</figcaption>
+        </figure>
+      </article>
+
+      <!-- Matcha Latte -->
+      <article class="item">
+        <div class="main-content" style="background-color: #7eb63d;">
+          <div class="content">
+            <h2>Matcha Latte Macchiato</h2>
+            <p class="price">₹220</p>
+            <p class="description">Premium matcha green tea with steamed milk and espresso. A bold and refreshing twist.</p>
+            <button class="addToCart" aria-label="Add Matcha Latte Macchiato to cart">Add To Cart</button>
+          </div>
+        </div>
+        <figure class="image">
+          <img src="images/4.png" alt="Matcha Latte Macchiato" />
+          <figcaption>Matcha Latte Macchiato</figcaption>
+        </figure>
+      </article>
+
+    </div>
+
+    <div class="arrows">
+      <button id="prev" aria-label="Previous Slide">&lt;</button>
+      <button id="next" aria-label="Next Slide">&gt;</button>
+    </div>
+  </section>
+  <section id="about" class="about-section">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>
+      Welcome to <strong>Not So Basic Cafe</strong> – a cozy corner where handcrafted coffee, delicious food, and chill vibes meet. 
+      Located at Hidel Chauraha on Nainital Road, we’re open daily from <strong>10:00 AM to 9:30 PM</strong>.
+    </p>
+    <p>
+      Whether you're grabbing a quick espresso or staying to work or chat with friends, we've got something special for every mood.
+    </p>
+  </div>
+</section>
+</main>
+<footer>
+    <div class="container">
+      &copy; 2025 Not So Basic Cafe. All rights reserved.
+    </div>
+  </footer>
+
+<script src="app.js"></script>
+</body>
+</html>
