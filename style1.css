@@ -32,7 +32,7 @@ li {
 }
 
 .carousel {
-  margin-top: -80px;
+  margin-top: 0;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -59,17 +59,17 @@ li {
 
 .carousel .list::after {
   position: absolute;
-  top: 80px;
-  left: 60px;
+  top: 60px;
+  left: 50px;
   content: "";
   background-color: #fbeeed;
-  width: 400px;
-  height: 300px;
+  width: 380px;
+  height: 280px;
   z-index: 6;
   pointer-events: none;
   border-radius: 20px 50px 110px 230px;
-  filter: blur(150px);
-  opacity: 0.6;
+  filter: blur(120px);
+  opacity: 0.5;
 }
 
 .carousel .list .item {
@@ -79,7 +79,7 @@ li {
   width: 100%;
   height: 100%;
   display: none;
-  transition: all 0.5s;
+  transition: all 0.5s ease;
 }
 
 .carousel .list .item.active,
@@ -99,83 +99,81 @@ li {
 
 .carousel .list .item .image {
   width: var(--w-image);
+  max-width: 420px;
   height: 100%;
   position: absolute;
   top: 0;
   left: calc(100% - calc(var(--w-image) * var(--calculate)));
-  padding: 20px;
+  padding: 30px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   font-weight: 500;
 }
 
 .carousel .list .item .image img {
-  width: 90%;
-  margin-bottom: 20px;
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 16px;
   filter: drop-shadow(0 30px 30px #9e0c0c30);
   border-radius: 15px;
 }
 
 .carousel .list .item .image figcaption {
   font-family: "Aboreto", cursive;
-  font-weight: bold;
-  font-size: 1.15em;
-  text-align: right;
-  margin-bottom: 20px;
-  width: 85%;
-  color: #fbe1b5;
-  letter-spacing: 0.5px;
+  font-size: 1.1em;
+  text-align: center;
+  color: #eee;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .carousel .list .item .main-content {
   height: 100%;
   display: grid;
-  grid-template-columns: calc(100% - calc(var(--w-image) * var(--calculate)));
+  grid-template-columns: 1fr var(--w-image);
 }
 
 .carousel .list .item .main-content .content {
-  padding: 140px 40px 20px 90px;
+  padding: 120px 40px 40px 90px;
   color: #0f2222;
-  background: none;
 }
 
 .carousel .list .item .main-content .content h2 {
-  font-size: 3.6em;
+  font-size: 3.2em;
   font-family: "Aboreto", cursive;
   color: #9c4d2f;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .carousel .list .item .main-content .content .price {
   font-family: "Aboreto", cursive;
-  font-size: 2.5em;
-  margin: 14px 0 12px 0;
+  font-size: 2.2em;
+  margin: 10px 0 20px 0;
   color: #4f8b69;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 
 .carousel .list .item .main-content .content .description {
   font-family: "Poppins", Arial, sans-serif;
   font-size: 1.15em;
   margin-bottom: 18px;
-  color: #444;
-  line-height: 1.5em;
+  color: #333;
+  line-height: 1.6em;
+  max-width: 600px;
 }
 
 .carousel .list .item .main-content .content .addToCard {
   background-color: #4f8b69;
   color: #fff;
   padding: 12px 30px;
+  font-size: 1.1em;
   font-family: "Poppins", Arial, sans-serif;
-  font-size: 1.14em;
-  font-weight: 500;
   border-radius: 30px;
   border: none;
-  margin-top: 18px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
   box-shadow: 0 3px 12px #4442;
 }
 
@@ -183,6 +181,34 @@ li {
   background-color: #9c4d2f;
   color: #fffce0;
 }
+
+/* Optional: Mobile responsiveness */
+@media (max-width: 768px) {
+  .carousel .list .item .main-content {
+    display: block;
+  }
+
+  .carousel .list .item .image {
+    position: relative;
+    width: 100%;
+    left: 0;
+    padding: 20px 0;
+  }
+
+  .carousel .list .item .main-content .content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .carousel .list .item .main-content .content h2 {
+    font-size: 2.2em;
+  }
+
+  .carousel .list .item .main-content .content .price {
+    font-size: 1.6em;
+  }
+}
+
 
 .arrows {
   position: absolute;
