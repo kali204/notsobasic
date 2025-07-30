@@ -1,0 +1,132 @@
+/* contact.css */
+
+.contact-section {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 2em 3em;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(62, 44, 35, 0.15); /* subtle coffee-brown shadow */
+  background-color: #f9f7f1; /* off-white */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3e2c23; /* dark coffee brown text */
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-section:hover {
+  box-shadow: 0 12px 30px rgba(62, 44, 35, 0.3);
+  background-color: #fff; /* brighten on hover */
+}
+
+.contact-section h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #6f4e37; /* medium coffee brown */
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #a9746e; /* light coffee brown */
+  padding-bottom: 0.5rem;
+}
+
+.contact-section p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+  color: #5a4431; /* slightly lighter coffee brown */
+}
+
+/* For the form */
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+}
+
+.contact-section label {
+  font-weight: 600;
+  color: #6f4e37;
+  margin-bottom: 0.3em;
+  display: block;
+  font-size: 1rem;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 0.6em 0.85em;
+  border: 1.5px solid #a9746e;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #3e2c23;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  resize: vertical;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  border-color: #6f4e37;
+  box-shadow: 0 0 5px #a9746eaa;
+  outline: none;
+}
+
+.error-msg {
+  font-size: 0.875rem;
+  color: #c0392b; /* red error */
+  margin-top: 0.2em;
+}
+
+/* Submit button */
+.submit-button {
+  align-self: flex-start;
+  background-color: #6f4e37; /* medium coffee brown */
+  color: #fff;
+  font-weight: 700;
+  padding: 0.9em 2em;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: #a9746e; /* lighter coffee brown */
+  color: #1a1a1a; /* near black */
+  outline: none;
+}
+
+/* If you kept ul list contact info (optional) */
+.contact-section ul {
+  list-style: none;
+  padding: 0;
+  color: #6f4e37;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.contact-section ul li {
+  margin-bottom: 0.8rem;
+}
+
+.contact-section ul li strong {
+  color: #a9746e;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 1.5em 1em;
+  }
+
+  .contact-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .contact-section form {
+    max-width: 100%;
+  }
+}

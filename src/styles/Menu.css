@@ -1,0 +1,103 @@
+:root {
+  --color-black: #1a1a1a;
+  --color-white: #ffffff;
+  --color-offwhite: #f9f7f1; /* warm off-white */
+  --color-brown-dark: #3e2c23; /* dark coffee brown */
+  --color-brown-medium: #6f4e37; /* medium coffee brown */
+  --color-brown-light: #a9746e; /* light coffee brown */
+}
+
+.menu-section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem 3rem;
+  background-color: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(62, 44, 35, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-brown-dark);
+  transition: box-shadow 0.3s ease;
+}
+
+.menu-section:hover {
+  box-shadow: 0 12px 35px rgba(62, 44, 35, 0.15);
+}
+
+.menu-section h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--color-brown-dark);
+  margin-bottom: 1rem;
+  border-bottom: 3px solid var(--color-brown-medium);
+  padding-bottom: 0.5rem;
+}
+
+.menu-section p {
+  font-size: 1.1rem;
+  color: var(--color-brown-medium);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Category title */
+.menu-category {
+  margin-bottom: 2rem;
+}
+
+.menu-category h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--color-brown-medium);
+  border-bottom: 1.5px solid var(--color-brown-light);
+  padding-bottom: 0.3rem;
+}
+
+/* Menu list items */
+.menu-category ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Display item and price in one line, spaced nicely */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed var(--color-brown-light);
+  color: var(--color-brown-dark);
+  font-weight: 600;
+  font-size: 1.12rem;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+/* Slight highlight on hover (optional) */
+.menu-item:hover {
+  background-color: var(--color-brown-light);
+  color: var(--color-white);
+  cursor: default;
+  border-radius: 6px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .menu-section {
+    padding: 1.5rem 1rem;
+  }
+  .menu-section h2 {
+    font-size: 1.8rem;
+  }
+  .menu-category h3 {
+    font-size: 1.4rem;
+  }
+  .menu-item {
+    font-size: 1rem;
+  }
+}
